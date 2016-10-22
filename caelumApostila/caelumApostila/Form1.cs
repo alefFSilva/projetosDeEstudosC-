@@ -21,5 +21,14 @@ namespace caelumApostila
         {
             MessageBox.Show("Hello World");
         }
+
+        private void btnMediaIdades_Click(object sender, EventArgs e)
+        {
+            int idadeAlef = 23;
+            int idadeRaissa = 22;
+            int media = (idadeAlef + idadeRaissa) / 2;
+
+            MessageBox.Show("Média das idades: " + media);
+        }
     }
 }

@@ -30,11 +30,12 @@
         {
             this.btnHelloWorld = new System.Windows.Forms.Button();
             this.btnMediaIdades = new System.Windows.Forms.Button();
+            this.btnBhaskara = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnHelloWorld
             // 
-            this.btnHelloWorld.Location = new System.Drawing.Point(12, 12);
+            this.btnHelloWorld.Location = new System.Drawing.Point(23, 26);
             this.btnHelloWorld.Name = "btnHelloWorld";
             this.btnHelloWorld.Size = new System.Drawing.Size(75, 23);
             this.btnHelloWorld.TabIndex = 0;
@@ -44,7 +45,7 @@
             // 
             // btnMediaIdades
             // 
-            this.btnMediaIdades.Location = new System.Drawing.Point(12, 41);
+            this.btnMediaIdades.Location = new System.Drawing.Point(174, 26);
             this.btnMediaIdades.Name = "btnMediaIdades";
             this.btnMediaIdades.Size = new System.Drawing.Size(75, 23);
             this.btnMediaIdades.TabIndex = 1;
@@ -52,15 +53,26 @@
             this.btnMediaIdades.UseVisualStyleBackColor = true;
             this.btnMediaIdades.Click += new System.EventHandler(this.btnMediaIdades_Click);
             // 
+            // btnBhaskara
+            // 
+            this.btnBhaskara.Location = new System.Drawing.Point(23, 64);
+            this.btnBhaskara.Name = "btnBhaskara";
+            this.btnBhaskara.Size = new System.Drawing.Size(75, 23);
+            this.btnBhaskara.TabIndex = 2;
+            this.btnBhaskara.Text = "Bhaskara";
+            this.btnBhaskara.UseVisualStyleBackColor = true;
+            this.btnBhaskara.Click += new System.EventHandler(this.btnBhaskara_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnBhaskara);
             this.Controls.Add(this.btnMediaIdades);
             this.Controls.Add(this.btnHelloWorld);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Exercícios Caelum";
             this.ResumeLayout(false);
 
         }
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button btnHelloWorld;
         private System.Windows.Forms.Button btnMediaIdades;
+        private System.Windows.Forms.Button btnBhaskara;
     }
 }
 

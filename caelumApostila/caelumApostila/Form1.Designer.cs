@@ -31,6 +31,9 @@
             this.btnHelloWorld = new System.Windows.Forms.Button();
             this.btnMediaIdades = new System.Windows.Forms.Button();
             this.btnBhaskara = new System.Windows.Forms.Button();
+            this.btnVerificaIdadeENacionalidade = new System.Windows.Forms.Button();
+            this.btnValorDaNF = new System.Windows.Forms.Button();
+            this.btnLacoFor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnHelloWorld
@@ -63,11 +66,44 @@
             this.btnBhaskara.UseVisualStyleBackColor = true;
             this.btnBhaskara.Click += new System.EventHandler(this.btnBhaskara_Click);
             // 
+            // btnVerificaIdadeENacionalidade
+            // 
+            this.btnVerificaIdadeENacionalidade.Location = new System.Drawing.Point(174, 64);
+            this.btnVerificaIdadeENacionalidade.Name = "btnVerificaIdadeENacionalidade";
+            this.btnVerificaIdadeENacionalidade.Size = new System.Drawing.Size(75, 23);
+            this.btnVerificaIdadeENacionalidade.TabIndex = 3;
+            this.btnVerificaIdadeENacionalidade.Text = "Pode votar?";
+            this.btnVerificaIdadeENacionalidade.UseVisualStyleBackColor = true;
+            this.btnVerificaIdadeENacionalidade.Click += new System.EventHandler(this.btnVerificaIdadeENacionalidade_Click);
+            // 
+            // btnValorDaNF
+            // 
+            this.btnValorDaNF.Location = new System.Drawing.Point(23, 111);
+            this.btnValorDaNF.Name = "btnValorDaNF";
+            this.btnValorDaNF.Size = new System.Drawing.Size(75, 23);
+            this.btnValorDaNF.TabIndex = 4;
+            this.btnValorDaNF.Text = "Valor da NF";
+            this.btnValorDaNF.UseVisualStyleBackColor = true;
+            this.btnValorDaNF.Click += new System.EventHandler(this.btnValorDaNF_Click);
+            // 
+            // btnLacoFor
+            // 
+            this.btnLacoFor.Location = new System.Drawing.Point(174, 111);
+            this.btnLacoFor.Name = "btnLacoFor";
+            this.btnLacoFor.Size = new System.Drawing.Size(75, 23);
+            this.btnLacoFor.TabIndex = 5;
+            this.btnLacoFor.Text = "Laço FOR";
+            this.btnLacoFor.UseVisualStyleBackColor = true;
+            this.btnLacoFor.Click += new System.EventHandler(this.btnLacoFor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnLacoFor);
+            this.Controls.Add(this.btnValorDaNF);
+            this.Controls.Add(this.btnVerificaIdadeENacionalidade);
             this.Controls.Add(this.btnBhaskara);
             this.Controls.Add(this.btnMediaIdades);
             this.Controls.Add(this.btnHelloWorld);
@@ -82,6 +118,9 @@
         private System.Windows.Forms.Button btnHelloWorld;
         private System.Windows.Forms.Button btnMediaIdades;
         private System.Windows.Forms.Button btnBhaskara;
+        private System.Windows.Forms.Button btnVerificaIdadeENacionalidade;
+        private System.Windows.Forms.Button btnValorDaNF;
+        private System.Windows.Forms.Button btnLacoFor;
     }
 }
 

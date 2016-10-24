@@ -56,6 +56,86 @@ namespace caelumApostila
         }
         #endregion
 
+        #region Verifica se pode votar
+
+        private void verificaSePodeVotar()
+        {
+
+            int idade = 16;
+            bool brasileiro = true;
+
+            if(idade >= 16 && brasileiro)
+            {
+
+                MessageBox.Show("Pode votar !");
+
+            }
+            else
+            {
+
+                MessageBox.Show("Não pode votar !");
+
+            }
+        }
+
+        #endregion
+
+        #region Verificar o valor da NF e aplica Taxa
+
+        public void verificaValorNF()
+        {
+            double valorNF = 5500.00;
+
+            if (valorNF <= 999)
+            {
+
+                valorNF += valorNF * 0.02;
+
+                MessageBox.Show("Valor da Nota com imposto: " + Convert.ToString(valorNF));
+
+            }
+            else if (valorNF <= 2999)
+            {
+
+                valorNF += valorNF * 0.025;
+
+                MessageBox.Show("Valor da Nota com imposto: " + Convert.ToString(valorNF));
+            }
+            else if (valorNF <= 6999)
+            {
+
+                valorNF += valorNF * 0.028;
+
+                MessageBox.Show("Valor da NOta com imposto: " + Convert.ToString(valorNF));
+            }
+            else {
+
+                valorNF += valorNF * 0.03;
+
+                MessageBox.Show("Valor da Nota com imposto: " + Convert.ToString(valorNF));
+
+            }
+
+
+        }
+
+        #endregion
+
+        #region Testa o laço FOR
+        private void testaLacoFor()
+        {
+            int total =2;
+            
+            for(int i = 0; i< 5; i += 1)
+            {
+                total = total * 2;
+            }
+
+            MessageBox.Show("Total do incremento: " + total);
+
+
+        }
+        #endregion
 
         #region Eventos de botões
 
@@ -76,7 +156,28 @@ namespace caelumApostila
 
          }
 
-        #endregion
+      
+        private void btnVerificaIdadeENacionalidade_Click(object sender, EventArgs e)
+        {
 
+            verificaSePodeVotar();
+
+        }
+
+        private void btnValorDaNF_Click(object sender, EventArgs e)
+        {
+
+            verificaValorNF();
+
+        }
+
+        private void btnLacoFor_Click(object sender, EventArgs e)
+        {
+
+            testaLacoFor();
+
+        }
     }
+
+    #endregion
 }

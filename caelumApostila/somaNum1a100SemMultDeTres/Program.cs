@@ -11,7 +11,7 @@ namespace somaNum1a100SemMultDeTres
         static void Main(string[] args)
         {
             int numero = 0;
-            for(int i = 0; i<=100; i++)
+            for(int i = 1; i<=100; i++)
             {
 
                 if(i % 3 != 0){

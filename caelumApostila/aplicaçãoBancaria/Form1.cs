@@ -17,6 +17,8 @@ namespace aplicaçãoBancaria
             InitializeComponent();
         }
 
+
+        #region primeiros exercícios
         private void realizaSaque()
         {
             double saldo = 100.0;
@@ -50,5 +52,31 @@ namespace aplicaçãoBancaria
         {
             realizaSaque();
         }
+        #endregion
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Conta c = new Conta();
+            c.saldo = 100;
+            c.titular = "alef";
+
+            if (c.Saca(50))
+            {
+
+                MessageBox.Show("Saque realizado com sucesso!");
+
+            }
+            else
+            {
+
+                MessageBox.Show("Saldo insuficiente !");
+            }
+
+            MessageBox.Show("Saldo c: " + c.titular);
+
+        }
+
+
     }
 }

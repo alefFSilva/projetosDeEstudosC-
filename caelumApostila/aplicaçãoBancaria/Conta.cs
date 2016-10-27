@@ -9,9 +9,9 @@ namespace aplicaçãoBancaria
     class Conta
     {
       public  int numero;
-      public  string titular;
+      public  Cliente titular;
       public  double saldo;
-        public int idade;
+       public int idade;
 
 
       public void Deposita(double valor)
